@@ -1,0 +1,66 @@
+.button-buy {
+    background-color: rgba(252, 15, 245, 0.75);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    font-size: 14px;
+    display: flex;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+.button-buy:hover {
+    background-color: rgb(131, 10, 134);
+}
+
+.image-bg-card {
+    width: 300px;
+    height: 450px;
+    background-image: resource('ReadyPlayerMe-Avatar (2)');
+    justify-content: space-between;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.login-button {
+    -unity-font-definition: resource('Roboto-Bold SDF');
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: rgba(252, 15, 245, 0.75);
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+.login-button:hover {
+    background-color: rgb(131, 10, 134);
+}

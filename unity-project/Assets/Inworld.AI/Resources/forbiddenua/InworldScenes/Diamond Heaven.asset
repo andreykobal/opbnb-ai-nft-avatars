@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ad0515a2868cd4282589144c7820fd, type: 3}
+  m_Name: Diamond Heaven
+  m_EditorClassIdentifier: 
+  fullName: workspaces/default-2mfv7jvfwv0bwyvlxqeo0w/scenes/diamond_heaven
+  shortName: Diamond Heaven
+  description: Step into the virtual oasis of "Diamond Haven" in the heart of New
+    York City's Central Park. This breathtaking scene captures the essence of tranquility
+    and natural beauty, transporting players to a serene haven amidst the bustling
+    cityscape. Immerse yourself in the lush greenery, vibrant flowers, and the gentle
+    rustling of leaves as you explore winding pathways, charming bridges, and secluded
+    spots perfect for relaxation. Whether you're taking a leisurely stroll, engaging
+    in a friendly game of frisbee, or simply unwinding on a park bench, "Diamond
+    Haven" offers a respite from the digital chaos, inviting players to find solace
+    in the harmonious embrace of nature.
+  characters:
+  - workspaces/default-2mfv7jvfwv0bwyvlxqeo0w/characters/gemma_the_explorer
+  triggers: []
+  index: 0

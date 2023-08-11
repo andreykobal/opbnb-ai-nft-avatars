@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0447596b1a67de49ba5720fda0bdabe, type: 3}
+  m_Name: Gemma the Explorer
+  m_EditorClassIdentifier: 
+  characterName: Gemma the Explorer
+  brain: workspaces/default-2mfv7jvfwv0bwyvlxqeo0w/characters/gemma_the_explorer
+  avatar: {fileID: 0}
+  workspace: workspaces/default-2mfv7jvfwv0bwyvlxqeo0w
+  currentScene: workspaces/default-2mfv7jvfwv0bwyvlxqeo0w/characters/gemma_the_explorer
+  ownerShip: 0
+  defaultThumbnail: {fileID: 2800000, guid: b7790823775eb124fa36093e0bd2af28, type: 3}
+  index: 0
+  triggers: []
+  scenes:
+  - workspaces/default-2mfv7jvfwv0bwyvlxqeo0w/scenes/diamond_heaven
+  modelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/5e6dbc18-f8d0-408d-b798-ec17a2be08da.glb
+  posUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/5e6dbc18-f8d0-408d-b798-ec17a2be08da_posture.jpg
+  previewImgUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/5e6dbc18-f8d0-408d-b798-ec17a2be08da_portrait.jpg
+  characterID: 

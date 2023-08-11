@@ -1,0 +1,1 @@
+{"description":"Other NFT Avatar","external_url":"https://ailand.app/","image":"https://bafkreie43fvwjqan253qkzmxotxhejehryqpr35f7wtxbbjyt3dbhuv4ca.ipfs.nftstorage.link/", "name":"Other Ailand Avatar #3333444343433", "animation_url":"https://bafybeibu7q7zcts4bp6cukknw2vqzjoiasnnabqrtq3hcu6ifkgv62xawa.ipfs.dweb.link/"}

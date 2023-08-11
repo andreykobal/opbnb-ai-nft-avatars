@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Style.uss?fileID=7433441132597879392&amp;guid=d3703abdee1b4264885f2f72ed1f9934&amp;type=3#Style" />
+    <ui:VisualElement name="Body" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; height: 100%; justify-content: space-between; background-image: none; color: rgb(255, 255, 255); -unity-font: resource(&apos;FlatSkin/Font/Roboto-Regular&apos;); width: 100%;">
+        <ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row; justify-content: flex-end; flex-wrap: nowrap; align-items: center; padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px; -unity-text-align: middle-left;">
+                <ui:VisualElement style="width: 30px; height: 30px; background-image: resource(&apos;diamond&apos;); margin-left: 10px; margin-right: 10px;" />
+                <ui:Label text="00" display-tooltip-when-elided="true" name="Diamonds" style="font-size: 18px; margin-right: 10px; -unity-font-definition: resource(&apos;Roboto-Bold SDF&apos;); margin-left: 0; margin-top: 0; margin-bottom: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement>
+            <ui:VisualElement />
+            <ui:VisualElement name="Claim" style="flex-direction: row; flex-wrap: nowrap; flex-shrink: 1; justify-content: center; display: flex; visibility: hidden;">
+                <ui:VisualElement style="padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+                    <ui:VisualElement name="Card" class="image-bg-card" style="background-image: resource(&apos;diamond-transformed&apos;); -unity-background-scale-mode: scale-and-crop;">
+                        <ui:Label text="10 Diamonds" display-tooltip-when-elided="true" style="align-items: stretch; -unity-text-align: upper-center; font-size: 14px; margin-top: 10px; -unity-font-definition: resource(&apos;Roboto-Regular SDF&apos;);" />
+                        <ui:Button text="Claim" display-tooltip-when-elided="true" name="ClaimButton" focusable="true" class="button-select button-buy" style="-unity-font-definition: resource(&apos;Roboto-Bold SDF&apos;);" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="width: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

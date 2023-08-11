@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Style.uss?fileID=7433441132597879392&amp;guid=d3703abdee1b4264885f2f72ed1f9934&amp;type=3#Style" />
+    <ui:VisualElement name="Body" style="width: 100%; height: 100%; background-image: resource(&apos;wallhaven-8x528o&apos;); justify-content: center; align-items: center; flex-direction: column;">
+        <ui:VisualElement style="width: 527px; background-image: resource(&apos;logo-nftverse&apos;); height: 256px; margin-top: 0; margin-bottom: 30px;" />
+        <ui:VisualElement style="align-items: center;">
+            <ui:Button display-tooltip-when-elided="true" name="Login" class="login-button" style="color: rgba(255, 255, 255, 255);">
+                <ui:VisualElement style="width: 50px; height: 50px; background-image: resource(&apos;MetaMask_Fox.svg&apos;);" />
+                <ui:Label text="CONNECT METAMASK" display-tooltip-when-elided="true" class="login-button" style="background-color: rgba(252, 15, 245, 0); font-size: 18px; color: rgba(255, 255, 255, 255);" />
+            </ui:Button>
+            <ui:Toggle label="REMEMBER ME" name="RememberMe" focusable="false" style="-unity-font-definition: resource(&apos;Roboto-Regular SDF&apos;); font-size: 18px; width: 180px; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items: stretch; color: rgb(255, 255, 255); margin-top: 10px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
