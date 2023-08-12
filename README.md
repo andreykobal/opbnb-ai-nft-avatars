@@ -50,6 +50,11 @@ MNEMONIC=privatekey. not the seedphrase
 Contract code inspired from Opensea: https://github.com/ProjectOpenSea/meta-transactions/blob/main/contracts/ERC721MetaTransactionMaticSample.sol
 This is for gas-less transactions when transferring assets. Users dont have to pay that extra gas, and get a better experience.
 
+## Crosschain Deployment
+
+To deploy a smart contract on a Testnet BSC with the ability to transfer NFTs to other chains see our [ZetaChain Crosschain NFT game SDK](https://github.com/andreykobal/zetachain-crosschain-nft-game-sdk)
+
+
 ### Deployments
 
 - BNB Smart Chain Testnet contract address: [0x5dA076A7a10560E0d597E131489fDd0Dc28c7951](https://testnet.bscscan.com/address/0x5dA076A7a10560E0d597E131489fDd0Dc28c7951)
