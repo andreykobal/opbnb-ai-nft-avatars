@@ -88,51 +88,6 @@ Important code snippets from `GameItems.sol`:
   }
   ```
 
-## NFT Storage Code Highlights
-
-`/nft-storage/upload-script.js`
-
-This Node.js script uses the NFT.Storage service to upload NFT files (GLB and JPG), generate corresponding metadata, and store the resulting URLs.
-
-The most important code snippet is the `uploadNFTFiles` function, which iterates through JSON files, uploads associated GLB and JPG files, generates metadata, and stores URLs:
-
-```javascript
-async function uploadNFTFiles() {
-  const client = new NFTStorage({ token: NFT_STORAGE_TOKEN });
-  const resultUrls = [];
-
-  // ...
-
-  for (const jsonFile of jsonFiles) {
-    // ...
-
-    if (files.includes(glbFile) && files.includes(jpgFile)) {
-      // Read the JSON file
-
-      // Upload GLB file
-
-      // Upload JPG file
-
-      // Generate separate JSON file
-
-      // Upload metadata file
-
-      // Store the result URL
-
-      console.log(`NFT ${baseFileName} uploaded and metadata generated.`);
-    }
-  }
-
-  // ...
-
-  fs.writeFileSync('result_urls.json', JSON.stringify(resultUrls, null, 2));
-}
-
-uploadNFTFiles();
-```
-
-This function reads JSON files, uploads associated files to NFT.Storage, generates metadata, stores result URLs, and creates a JSON file containing the URLs of the processed NFTs.
-
 ## Game Code Highlights
 
 Here are some C# code highlights from the Interactive AI NFT Avatars Unity project:
