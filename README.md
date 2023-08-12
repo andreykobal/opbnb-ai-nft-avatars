@@ -106,6 +106,8 @@ Here are some C# code highlights from the Interactive AI NFT Avatars Unity proje
 
 ### MintNFT.cs
 
+`unity-project/Assets/EVM/MintNFT.cs`
+
 ```csharp
 async public void mintItem(int avatarIndex)
 {
@@ -134,6 +136,8 @@ async public void mintItem(int avatarIndex)
 ```
 
 ### CheckNFTOwnership.cs
+
+`unity-project/Assets/EVM/CheckNFTOwnership.cs`
 
 ```csharp
 async public void CheckNFTBalance(string contractAddress, int avatarIndex)
@@ -164,6 +168,8 @@ async public void CheckNFTBalance(string contractAddress, int avatarIndex)
 
 ### Check1155Balance.cs
 
+`unity-project/Assets/EVM/Check1155Balance.cs`
+
 ```csharp
 async public void Check1155TotalBalance()
 {
@@ -189,6 +195,9 @@ async public void Check1155TotalBalance()
 ```
 
 ### MintDiamonds.cs
+
+`unity-project/Assets/EVM/MintDiamonds.cs`
+
 
 ```csharp
 private async void Start()
@@ -229,6 +238,9 @@ async public void Mint1155Diamonds()
 ```
 
 ### GetTokensMetadata.cs
+
+`unity-project/Assets/EVM/GetTokensMetadata.cs`
+
 This code defines a Unity script named `GetTokensMetadata` that interacts with an Ethereum smart contract and retrieves metadata for NFTs (Non-Fungible Tokens) owned by a specific address, including information like title, description, URLs for the 3D model and icon, network, and token ID.
 
 The most important code snippet is the `GetRequest` method, responsible for making a web request to retrieve JSON metadata for a specific NFT token URI, then parsing the JSON and creating an `NftData` object to store the metadata.
@@ -290,6 +302,9 @@ OpenAI API Reference for Models: [OpenAI API Models](https://platform.openai.com
 Microsoft Cognitive Services Speech SDK on GitHub: [Cognitive Services Speech SDK](https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master)
 
 ### OpenAIChat.cs
+
+`unity-project/Assets/AiNft/OpenAIChat.cs`
+
 
 This code defines a Unity script named `OpenAIChat` that implements a chatbot interaction using OpenAI's API, where the chatbot engages in a conversation with users and responds to their messages.
 
@@ -356,6 +371,8 @@ This method sends the user message along with the conversation context to the Op
 
 ### SpeechToText.cs
 
+`unity-project/Assets/AiNft/SpeechToText.cs`
+
 This script, named `SpeechToText`, is used in Unity to perform speech recognition using Microsoft's Cognitive Services Speech API, and it also interacts with an `OpenAIChat` script to integrate with a chatbot.
 
 The most important code snippet is the `ButtonClick` method, where the speech recognition process is initiated:
@@ -412,6 +429,8 @@ public async void ButtonClick()
 This method initializes a speech recognizer, starts speech recognition, and handles the recognition result. If recognized, the recognized text is processed and passed to the `OpenAIChat` script for further interaction.
 
 ### TextToSpeech.cs
+
+`unity-project/Assets/AiNft/TextToSpeech.cs`
 
 This script, named `TextToSpeech`, handles text-to-speech synthesis in Unity using Microsoft's Cognitive Services Speech API, and it integrates with UI elements and an avatar animation.
 
