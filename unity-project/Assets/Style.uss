@@ -1,5 +1,5 @@
 .button-buy {
-    background-color: rgba(252, 15, 245, 0.75);
+    background-color: rgba(240, 185, 11, 0.75);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -23,7 +23,7 @@
 }
 
 .button-buy:hover {
-    background-color: rgb(131, 10, 134);
+    background-color: rgba(240, 185, 11, 1);
 }
 
 .image-bg-card {
@@ -57,10 +57,10 @@
     border-bottom-left-radius: 35px;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
-    background-color: rgba(252, 15, 245, 0.75);
+    background-color: rgba(240, 185, 11, 0.75);
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
 }
 .login-button:hover {
-    background-color: rgb(131, 10, 134);
+    background-color: rgba(240, 185, 11, 1);
 }

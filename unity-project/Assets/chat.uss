@@ -1,0 +1,30 @@
+.play {
+    -unity-font-definition: resource('Roboto-Bold SDF');
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(240, 185, 11, 0.75);
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    font-size: 18px;
+
+
+}
+
+.play:hover {
+    background-color: rgba(240, 185, 11, 1);
+}

@@ -1,4 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/chat.uss?fileID=7433441132597879392&amp;guid=2fff716c55b2a4114a2e8f66836e360c&amp;type=3#chat" />
     <ui:VisualElement style="flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; width: 100%; height: 100%; visibility: visible; overflow: hidden;">
         <ui:VisualElement style="width: 50%; align-items: center;">
             <ui:Label display-tooltip-when-elided="true" name="Response" style="font-size: 18px; color: rgb(255, 255, 255); -unity-text-align: upper-center;" />
@@ -11,6 +12,9 @@
             <ui:TextField picking-mode="Ignore" value="Write your message" text="Send a message" name="Input" style="width: 70%;" />
             <ui:Button text="Send" display-tooltip-when-elided="true" name="Send" style="width: 15%;" />
             <ui:Button text="Voice" display-tooltip-when-elided="true" name="Voice" style="width: 15%;" />
+        </ui:VisualElement>
+        <ui:VisualElement>
+            <ui:Button text="PLAY" display-tooltip-when-elided="true" name="Play" class="play" style="color: rgb(255, 255, 255); -unity-font-style: bold;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
