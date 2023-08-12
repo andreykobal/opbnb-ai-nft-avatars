@@ -38,6 +38,7 @@ MNEMONIC=privatekey. not the seedphrase
 * Edit the deploy script to pass in your name and ticker/uri depending on standard
 * Edit the contractUri method in the contract and add your collection metadata URI 
 * Edit the mint script and add your token uri, contract address and account address of the account you want to mint to.
+* Compile the smart contracts with `npx hardhat compile`
 * Deploy with `npx hardhat run --network opbnb scripts/deploy721.js` for ERC-721
 * Deploy with `npx hardhat run --network opbnb scripts/deploy1155.js` for ERC-1155
 * Mint 721 with `npx hardhat run --network opbnb scripts/mint.js`
