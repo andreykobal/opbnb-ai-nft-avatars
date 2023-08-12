@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e300208fa3ee04a99d031a99308441, type: 3}
   m_Name: ProjectConfigData
   m_EditorClassIdentifier: 
-  projectID: d0c9c05b-cbab-4057-a272-78cd759dcfc5
-  chainID: 1351057110
-  chain: staging-fast-active-bellatrix
-  network: testnet
-  rpc: https://staging-v3.skalenodes.com/v1/staging-fast-active-bellatrix
+  projectID: fd2ec990-6caf-4786-98d2-95e67f2968cf
+  chainID: Please Enter Your Chain ID
+  chain: Please Enter Your Chain i.e Ethereum, Binance, Cronos
+  network: Please Enter Your Network i.e Mainnet, Testnet
+  rpc: Please Enter Your RPC
