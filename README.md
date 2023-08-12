@@ -50,6 +50,14 @@ MNEMONIC=privatekey. not the seedphrase
 Contract code inspired from Opensea: https://github.com/ProjectOpenSea/meta-transactions/blob/main/contracts/ERC721MetaTransactionMaticSample.sol
 This is for gas-less transactions when transferring assets. Users dont have to pay that extra gas, and get a better experience.
 
+### Deployments
+
+- BNB Smart Chain Testnet contract address: [0x5dA076A7a10560E0d597E131489fDd0Dc28c7951](https://testnet.bscscan.com/address/0x5dA076A7a10560E0d597E131489fDd0Dc28c7951)
+- opBNB Testnet contract address: [0xaC7e4Ad5d7557B78ebc84Dff668A06709f5Dc62B](https://opbnb-testnet.bscscan.com/address/0xac7e4ad5d7557b78ebc84dff668a06709f5dc62b)
+- BNB Greenfield metadata example: 
+[https://gnfd-testnet-sp1.bnbchain.org/view/ailand-testnet/metadata.json](https://gnfd-testnet-sp1.bnbchain.org/view/ailand-testnet/metadata.json)
+
+
 ## Smart Contract Code Highlights
 
 ### GameItem.sol
