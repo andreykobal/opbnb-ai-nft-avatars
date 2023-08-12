@@ -1,13 +1,13 @@
-# Interactive AI NFT Avatars on opBNB Chain
+# Interactive AI NFT Avatars on opBNB / BSC / BNB Greenfield
 
 ![ai-nft-bnb](https://github.com/andreykobal/opbnb-ai-nft-avatars/assets/19206978/b0bce338-c907-4b68-88c9-8f2c77fe88c3)
 
 
-Welcome to the **Interactive AI NFT Avatars on opBNB Chain** GitHub repository! This repository contains the Unity game project along with the smart contracts used in the game. Interactive AI NFT Avatars is an exciting 3D game where players use NFT avatars, complete quests, collect diamonds, and explore magical worlds.
+Welcome to the **Interactive AI NFT Avatars on opBNB / BSC / BNB Greenfield** GitHub repository! This repository contains the Unity game project along with the smart contracts used in the game. Interactive AI NFT Avatars is an exciting 3D game where players use NFT avatars, complete quests, collect diamonds, and explore magical worlds.
 
 ## Project Setup
 
-To set up the Interactive AI NFT Avatars on opBNB Chain project, please follow these steps:
+To set up the Interactive AI NFT Avatars on opBNB / BSC / BNB Greenfield project, please follow these steps:
 
 1. Clone the repository to your local machine using the following command:
    ```
