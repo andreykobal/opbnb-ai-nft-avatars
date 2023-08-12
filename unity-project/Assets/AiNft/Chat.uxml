@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-direction: column; flex-wrap: nowrap; justify-content: center; align-items: center; width: 100%; height: 100%; visibility: visible; overflow: hidden;">
+        <ui:VisualElement style="width: 50%; align-items: center;">
+            <ui:Label display-tooltip-when-elided="true" name="Response" style="font-size: 18px; color: rgb(255, 255, 255); -unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="width: 100%; height: 75%; visibility: hidden; overflow: hidden;" />
+        <ui:VisualElement style="width: 50%; align-items: center;">
+            <ui:Label display-tooltip-when-elided="true" name="TextMessage" style="font-size: 18px; color: rgb(255, 204, 0); -unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="width: 50%; flex-direction: row; justify-content: center; align-items: auto;">
+            <ui:TextField picking-mode="Ignore" value="Write your message" text="Send a message" name="Input" style="width: 70%;" />
+            <ui:Button text="Send" display-tooltip-when-elided="true" name="Send" style="width: 15%;" />
+            <ui:Button text="Voice" display-tooltip-when-elided="true" name="Voice" style="width: 15%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
