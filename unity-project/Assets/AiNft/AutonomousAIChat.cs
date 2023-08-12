@@ -50,7 +50,7 @@ public class AutonomousAIChat : MonoBehaviour
     {
         while (true)
         {
-            StartCoroutine(SendMessage("Comment the situation on the battlefield"));
+            StartCoroutine(SendMessage("Tell a random fact about yourself"));
         
             // Wait for the response to finish speaking
             yield return new WaitUntil(() => !speechSynthesizer.isSpeaking);
@@ -62,7 +62,7 @@ public class AutonomousAIChat : MonoBehaviour
 
     private IEnumerator SendMessage(string message)
     {
-        string systemMessage = "Give a very short one-line response to the user's prompt. Be witty, concise, and hilarious! The response should be a comment on the ongoing match as if you're in it, crack jokes, and offer quick game insights. Think short, snappy! " + "You are " + characterName + ", the very character the player is controlling in a battle royale game with firearms. Your biography: " + characterBio;
+        string systemMessage = "Give a very short one-line response to the user's prompt. Be witty, concise, and hilarious!, crack jokes, and offer quick game insights. Think short, snappy! " + "You are " + characterName + ", the very character the player is controlling in an adventure game. Your biography: " + characterBio;
 
         if (message.Length > maxContextLength)
         {
