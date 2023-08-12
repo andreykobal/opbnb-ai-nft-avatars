@@ -1,17 +1,17 @@
-# SKALE OpenVerse: Adventure Game Template With NFT, SFT, AI
+# Interactive AI NFT Avatars on opBNB Chain
 
-![logo-skale](https://github.com/andreykobal/skale-nft-game/assets/19206978/107f80e6-670c-480c-9815-fe8a736f2642)
+![ai-nft-bnb](https://github.com/andreykobal/opbnb-ai-nft-avatars/assets/19206978/b0bce338-c907-4b68-88c9-8f2c77fe88c3)
 
 
-Welcome to the **SKALE OpenVerse: Adventure Game Template** GitHub repository! This repository contains the Unity game project along with the smart contracts used in the game. Adventure Game Template is an exciting 3D game where players use NFT avatars, complete quests, collect diamonds, and explore magical worlds.
+Welcome to the **Interactive AI NFT Avatars on opBNB Chain** GitHub repository! This repository contains the Unity game project along with the smart contracts used in the game. Adventure Game Template is an exciting 3D game where players use NFT avatars, complete quests, collect diamonds, and explore magical worlds.
 
 ## Project Setup
 
-To set up the Adventure Game Template project, please follow these steps:
+To set up the Interactive AI NFT Avatars on opBNB Chain project, please follow these steps:
 
 1. Clone the repository to your local machine using the following command:
    ```
-   git clone https://github.com/andreykobal/skale-nft-game.git
+   git clone https://github.com/andreykobal/opbnb-ai-nft-avatars.git
    ```
 
 2. Open the Unity game project that is located in `/unity-project` using Unity Hub or your preferred Unity editor.
@@ -22,7 +22,7 @@ To set up the Adventure Game Template project, please follow these steps:
 
 5. Set up the Metamask extension in your preferred browser and create a wallet.
 
-6. Configure the Metamask wallet by connecting it to the SKALE network and obtaining the necessary testnet tokens [SKALE Quick Start](https://docs.skale.network/develop/). 
+6. Configure the Metamask wallet by connecting it to the opBNB network and obtaining the necessary testnet tokens [opBNB Getting Started]([https://docs..network/develop/](https://docs.bnbchain.org/opbnb-docs/docs/build-on-opbnb/getting-started)). 
 
 7. Build and run the game to start playing Adventure Game Template!
 
@@ -38,12 +38,12 @@ MNEMONIC=privatekey. not the seedphrase
 * Edit the deploy script to pass in your name and ticker/uri depending on standard
 * Edit the contractUri method in the contract and add your collection metadata URI 
 * Edit the mint script and add your token uri, contract address and account address of the account you want to mint to.
-* Deploy with `npx hardhat run --network scaleTestnet scripts/deploy721.js` for ERC-721
-* Deploy with `npx hardhat run --network scaleTestnet scripts/deploy1155.js` for ERC-1155
-* Mint 721 with `npx hardhat run --network scaleTestnet scripts/mint.js`
-* Mint 1155 with `npx hardhat run --network scaleTestnet scripts/mint1155.js`
-* Check balance of ERC-1155 with `npx hardhat run --network scaleTestnet scripts/balances.js`
-* Get metadata of ERC-721 with `npx hardhat run --network scaleTestnet scripts/getTokensOfOwner.js`
+* Deploy with `npx hardhat run --network opbnb scripts/deploy721.js` for ERC-721
+* Deploy with `npx hardhat run --network opbnb scripts/deploy1155.js` for ERC-1155
+* Mint 721 with `npx hardhat run --network opbnb scripts/mint.js`
+* Mint 1155 with `npx hardhat run --network opbnb scripts/mint1155.js`
+* Check balance of ERC-1155 with `npx hardhat run --network opbnb scripts/balances.js`
+* Get metadata of ERC-721 with `npx hardhat run --network opbnb scripts/getTokensOfOwner.js`
 
 
 Contract code inspired from Opensea: https://github.com/ProjectOpenSea/meta-transactions/blob/main/contracts/ERC721MetaTransactionMaticSample.sol
@@ -96,14 +96,14 @@ Here are some C# code highlights from the Adventure Game Template project:
 ```csharp
 async public void mintItem(int avatarIndex)
 {
-    string chainId = "1351057110";
+    string chainId = "5611";
     var tokenURI = "https://bafkreiczapdwomdlotjqt4yaojyizlgarn4kq57smi3ptkwn5lug5yz7yu.ipfs.nftstorage.link/";
 
     string contractAbi = "";
     string contractAddress = contractAddresses[avatarIndex];
     string method = "mintItem";
     
-    var provider = new JsonRpcProvider("https://staging-v3.skalenodes.com/v1/staging-fast-active-bellatrix");
+    var provider = new JsonRpcProvider("https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3");
     var contract = new Contract(contractAbi, contractAddress, provider);
     Debug.Log("Contract: " + contract);
     
@@ -128,7 +128,7 @@ async public void CheckNFTBalance(string contractAddress, int avatarIndex)
     string contractAbi = "";
     string method = "getBalance";
 
-    var provider = new JsonRpcProvider("https://staging-v3.skalenodes.com/v1/staging-fast-active-bellatrix");
+    var provider = new JsonRpcProvider("https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3");
     var contract = new Contract(contractAbi, contractAddress, provider);
     Debug.Log("Contract: " + contract);
 
@@ -159,7 +159,7 @@ async public void Check1155TotalBalance()
     string method = "getTotalBalance";
     
     var walletAddress = PlayerPrefs.GetString("Account");
-    var provider = new JsonRpcProvider("https://staging-v3.skalenodes.com/v1/staging-fast-active-bellatrix");
+    var provider = new JsonRpcProvider("https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3");
     var contract = new Contract(contractAbi, contractAddress, provider);
     var calldata = await contract.Call(method, new object[]
     {
@@ -190,7 +190,7 @@ private async void Start()
 
 async public void Mint1155Diamonds()
 {
-    string chainId = "1351057110";
+    string chainId = "5611";
     string contractAddress = "0x6721De8B1865A6cD98C64165305611B1f28B95e4";
     string value = "0";
     string abi = "";
@@ -228,7 +228,7 @@ public class GetTokensMetadata : MonoBehaviour
         string contractAddress = "0x643D5cf6fdd9Faa3825e194e925D07E290E993D2"; // Replace with your contract's address.
         string method = "getTokensOfOwner";
         // you can use this to create a provider for hardcoding and parse this instead of rpc get instance
-        var provider = new JsonRpcProvider("https://staging-v3.skalenodes.com/v1/staging-fast-active-bellatrix");
+        var provider = new JsonRpcProvider("https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3");
         var contract = new Contract(contractAbi, contractAddress, provider);
         Debug.Log("Contract: " + contract);
 
@@ -260,48 +260,6 @@ public class GetTokensMetadata : MonoBehaviour
     {
         print("Exception when casting: " + e.Message);
     }
-    }
-}
-```
-
-### ClaimController.cs
-
-Distributing sFUEL to users is an important part of building on SKALE.
-Docs: [sFUEL Distribution](https://docs.skale.network/develop/sfuel/sfuel-distribution)
-
-```csharp
-public class ClaimController : MonoBehaviour
-{
-    private const string BaseUrl = "https://skale-sfuel-77334b37033d.herokuapp.com";
-
-    private void Start() {
-        string currentAccount = PlayerPrefs.GetString("Account");
-        Claim(currentAccount);
-    }
-
-    public void Claim(string ethereumAddress)
-    {
-        string url = $"{BaseUrl}/claim/{ethereumAddress}";
-        StartCoroutine(SendRequest(url));
-    }
-
-    private IEnumerator SendRequest(string url)
-    {
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            yield return webRequest.SendWebRequest();
-
-            if (webRequest.result == UnityWebRequest.Result.Success)
-            {
-                Debug.Log("sFuel Claim Request successful");
-                Debug.Log(webRequest.downloadHandler.text);
-            }
-            else
-            {
-                Debug.LogError("sFuel Claim Request failed");
-                Debug.LogError(webRequest.error);
-            }
-        }
     }
 }
 ```
