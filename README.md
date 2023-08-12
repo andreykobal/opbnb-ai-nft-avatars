@@ -3,7 +3,7 @@
 ![ai-nft-bnb](https://github.com/andreykobal/opbnb-ai-nft-avatars/assets/19206978/b0bce338-c907-4b68-88c9-8f2c77fe88c3)
 
 
-Welcome to the **Interactive AI NFT Avatars on opBNB Chain** GitHub repository! This repository contains the Unity game project along with the smart contracts used in the game. Adventure Game Template is an exciting 3D game where players use NFT avatars, complete quests, collect diamonds, and explore magical worlds.
+Welcome to the **Interactive AI NFT Avatars on opBNB Chain** GitHub repository! This repository contains the Unity game project along with the smart contracts used in the game. Interactive AI NFT Avatars is an exciting 3D game where players use NFT avatars, complete quests, collect diamonds, and explore magical worlds.
 
 ## Project Setup
 
@@ -24,7 +24,7 @@ To set up the Interactive AI NFT Avatars on opBNB Chain project, please follow t
 
 6. Configure the Metamask wallet by connecting it to the opBNB network and obtaining the necessary testnet tokens [opBNB Getting Started]([https://docs..network/develop/](https://docs.bnbchain.org/opbnb-docs/docs/build-on-opbnb/getting-started)). 
 
-7. Build and run the game to start playing Adventure Game Template!
+7. Build and run the game to start playing Interactive AI NFT Avatars!
 
 ## Smart Contract Deployment
 
@@ -53,7 +53,7 @@ This is for gas-less transactions when transferring assets. Users dont have to p
 
 ### GameItem.sol
 
-The `GameItem.sol` contract is responsible for managing the 721 non-fungible token (NFT) avatars in Adventure Game Template. Players can purchase avatars and own them using this contract.
+The `GameItem.sol` contract is responsible for managing the 721 non-fungible token (NFT) avatars in Interactive AI NFT Avatars. Players can purchase avatars and own them using this contract.
 
 Important code snippets from `GameItem.sol`:
 
@@ -67,7 +67,7 @@ Important code snippets from `GameItem.sol`:
 
 ### GameItems.sol
 
-The `GameItems.sol` contract handles the 1155 semi-fungible token (SFT) diamonds in Adventure Game Template. Players can collect these diamonds and use them to claim rewards.
+The `GameItems.sol` contract handles the 1155 semi-fungible token (SFT) diamonds in Interactive AI NFT Avatars. Players can collect these diamonds and use them to claim rewards.
 
 Important code snippets from `GameItems.sol`:
 
@@ -89,7 +89,7 @@ Important code snippets from `GameItems.sol`:
 
 ## Game Code Highlights
 
-Here are some C# code highlights from the Adventure Game Template project:
+Here are some C# code highlights from the Interactive AI NFT Avatars project:
 
 ### MintNFT.cs
 
@@ -269,14 +269,14 @@ public class GetTokensMetadata : MonoBehaviour
 
 Thank you for your interest in contributing
 
- to Adventure Game Template! If you would like to contribute, please follow these guidelines:
+ to Interactive AI NFT Avatars! If you would like to contribute, please follow these guidelines:
 
 - Fork the repository and create a new branch for your contributions.
 - Make your changes and ensure that the code adheres to the project's coding style and conventions.
 - Test your changes thoroughly.
 - Submit a pull request describing your changes and the rationale behind them.
 
-We appreciate your contributions to make Adventure Game Template an even more exciting game!
+We appreciate your contributions to make Interactive AI NFT Avatars an even more exciting game!
 
 ## License
 
@@ -284,7 +284,7 @@ This project is licensed under the [MIT License](LICENSE). Feel free to use, mod
 
 ## Acknowledgements
 
-We would like to express our gratitude to the open-source community for their valuable contributions and the resources that helped in the development of Adventure Game Template.
+We would like to express our gratitude to the open-source community for their valuable contributions and the resources that helped in the development of Interactive AI NFT Avatars.
 
-If you have any questions or encounter any issues, please don't hesitate to reach out. Enjoy playing Adventure Game Template!
+If you have any questions or encounter any issues, please don't hesitate to reach out. Enjoy playing Interactive AI NFT Avatars!
 
