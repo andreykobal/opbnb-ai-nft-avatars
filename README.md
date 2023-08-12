@@ -135,7 +135,7 @@ This function reads JSON files, uploads associated files to NFT.Storage, generat
 
 ## Game Code Highlights
 
-Here are some C# code highlights from the Interactive AI NFT Avatars project:
+Here are some C# code highlights from the Interactive AI NFT Avatars Unity project:
 
 ### MintNFT.cs
 
