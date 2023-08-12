@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ProjectConfigData
   m_EditorClassIdentifier: 
   projectID: fd2ec990-6caf-4786-98d2-95e67f2968cf
-  chainID: Please Enter Your Chain ID
-  chain: Please Enter Your Chain i.e Ethereum, Binance, Cronos
-  network: Please Enter Your Network i.e Mainnet, Testnet
-  rpc: Please Enter Your RPC
+  chainID: 1351057110
+  chain: Skale
+  network: Testnet
+  rpc: https://staging-v3.skalenodes.com/v1/staging-fast-active-bellatrix

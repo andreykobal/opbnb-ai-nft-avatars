@@ -31,6 +31,11 @@ public class AutonomousAIChat : MonoBehaviour
         characterBio = PlayerPrefs.GetString("avatarDescription");
         string voice = PlayerPrefs.GetString("avatarVoice");
         speechSynthesizer.SetSynthesizeVoiceConfig(voice);
+        
+        StartCoroutine(GeneratePeriodicPhrases());
+        Debug.Log("Starting generating periodic phrases...");
+        isSpeaking = true; // Set the flag to true
+
     }
     
     private void Update()
@@ -38,9 +43,6 @@ public class AutonomousAIChat : MonoBehaviour
         // If 'V' is pressed and the GeneratePeriodicPhrases coroutine is not already running
         if (Input.GetKeyDown(KeyCode.V) && !isSpeaking)
         {
-            StartCoroutine(GeneratePeriodicPhrases());
-            Debug.Log("Starting generating periodic phrases...");
-            isSpeaking = true; // Set the flag to true
         }
     }
     

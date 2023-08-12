@@ -80,8 +80,37 @@ public class UI : MonoBehaviour
 
     private void HandleButtonClick(int avatarIndex)
     {
+        string avatarName = "";
+        string avatarDescription = "";
+        string avatarVoice = "";
+
+        switch (avatarIndex)
+        {
+            case 0:
+                avatarName = "Isabella";
+                avatarDescription = "Brilliant hacker and cyberpunk rebel.";
+                avatarVoice = "Female";
+                break;
+            case 1:
+                avatarName = "Kaito";
+                avatarDescription = "Suave international thief and enigmatic anti-hero.";
+                avatarVoice = "Male";
+                break;
+            case 2:
+                avatarName = "Zara";
+                avatarDescription = "Skilled private investigator with a no-nonsense attitude.";
+                avatarVoice = "Female";
+                break;
+            default:
+                break;
+        }
+
         if (checkNFTOwnership.HasAvatar(avatarIndex))
         {
+            PlayerPrefs.SetString("avatarName", avatarName);
+            PlayerPrefs.SetString("avatarDescription", avatarDescription);
+            PlayerPrefs.SetString("avatarVoice", avatarVoice);
+
             Debug.Log("Selected Character " + (avatarIndex + 1));
             DesiredAvatarIndex = avatarIndex;
             LoadNextScene();
