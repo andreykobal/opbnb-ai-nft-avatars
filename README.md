@@ -216,53 +216,215 @@ async public void Mint1155Diamonds()
 ```
 
 ### GetTokensMetadata.cs
+This code defines a Unity script named `GetTokensMetadata` that interacts with an Ethereum smart contract and retrieves metadata for NFTs (Non-Fungible Tokens) owned by a specific address, including information like title, description, URLs for the 3D model and icon, network, and token ID.
+
+The most important code snippet is the `GetRequest` method, responsible for making a web request to retrieve JSON metadata for a specific NFT token URI, then parsing the JSON and creating an `NftData` object to store the metadata.
 
 ```csharp
-public class GetTokensMetadata : MonoBehaviour
+async Task GetRequest(string uri, string network, string tokenId)
 {
-    async public void CheckTokensOwned()
+    using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
     {
-        // ABI for GameItem contract
-        string contractAbi = "YOUR_CONTRACT_ABI";
-        // address of contract
-        string contractAddress = "0x643D5cf6fdd9Faa3825e194e925D07E290E993D2"; // Replace with your contract's address.
-        string method = "getTokensOfOwner";
-        // you can use this to create a provider for hardcoding and parse this instead of rpc get instance
-        var provider = new JsonRpcProvider("https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3");
-        var contract = new Contract(contractAbi, contractAddress, provider);
-        Debug.Log("Contract: " + contract);
+        await webRequest.SendWebRequest();
 
-        // address of the owner whose tokens we want to check
-        string ownerAddress = PlayerPrefs.GetString("Account"); // Replace with the address of the owner whose tokens you want to check.
-
-    var calldata = await contract.Call(method, new object[]
-    {
-        ownerAddress // parameter for the getTokensOfOwner function
-    });
-
-    try
-    {
-        List<string> tokenURIs = calldata[0] as List<string>;
-
-        if(tokenURIs != null)
+        if (webRequest.isNetworkError)
         {
-            foreach (string tokenURI in tokenURIs)
-            {
-                print("Token URI: " + tokenURI);
-            }
+            Debug.Log(uri + ": Error: " + webRequest.error);
         }
         else
         {
-            print("Could not cast returned data to List<string>.");
+            JObject json = JObject.Parse(webRequest.downloadHandler.text);
+
+            if (json != null)
+            {
+                try
+                {
+                    NftData nftData = new NftData
+                    {
+                        Title = json["name"].ToString(),
+                        Description = json["description"].ToString(),
+                        UrlModel = json["animation_url"].ToString(),
+                        UrlIcon = json["image"].ToString(),
+                        Network = network,
+                        TokenId = tokenId
+                        // If you wish to include attributes, add them here
+                    };
+
+                    nftDataList.Add(nftData);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError("Error while parsing and creating NftData: " + e);
+                }
+            }
+            else
+            {
+                Debug.LogError("Parsed JSON is null.");
+            }
         }
-    }
-    catch(Exception e)
-    {
-        print("Exception when casting: " + e.Message);
-    }
     }
 }
 ```
+
+This method fetches metadata from a given URI, processes the retrieved JSON data to create an `NftData` object, and adds it to the `nftDataList` collection for later use.
+
+## AI Integration
+
+AI integration in this project involved the use of the OpenAI API for natural language processing, as well as the Microsoft Cognitive Services Speech SDK for text-to-speech synthesis; you can explore further details through the links below:
+
+OpenAI API Reference for Models: [OpenAI API Models](https://platform.openai.com/docs/api-reference/models)
+
+Microsoft Cognitive Services Speech SDK on GitHub: [Cognitive Services Speech SDK](https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master)
+
+### OpenAIChat.cs
+
+This code defines a Unity script named `OpenAIChat` that implements a chatbot interaction using OpenAI's API, where the chatbot engages in a conversation with users and responds to their messages.
+
+The most important code snippet is the `SendMessage` method, responsible for sending a user's message to the OpenAI API, receiving a response, processing it, updating the conversation context, and initiating speech synthesis for the chatbot's reply:
+
+```csharp
+private IEnumerator SendMessage(string message)
+{
+    // ...
+
+    // Build the chat request
+    ChatRequest chatRequest = new ChatRequest
+    {
+        model = model,
+        messages = new Message[]
+        {
+            // Include both the user message and the system response in the conversation context
+            new Message { role = "system", content = systemMessage },
+            new Message { role = "user", content = conversationContext + "\n\n USER: " + message }
+        }
+    };
+
+    // ...
+
+    // Send the request to OpenAI API
+    yield return request.SendWebRequest();
+
+    if (request.result != UnityWebRequest.Result.Success)
+    {
+        Debug.LogError("Error: " + request.error);
+    }
+    else
+    {
+        // Process the API response
+        string jsonResponse = request.downloadHandler.text;
+        ChatResponse chatResponse = JsonConvert.DeserializeObject<ChatResponse>(jsonResponse);
+        string reply = chatResponse.choices[0].message.content;
+        Debug.Log("Completion: " + reply);
+
+        // ...
+
+        // Update conversation context with user and chatbot messages
+        conversationContext += "USER: " + message + "\n";
+        conversationContext += characterName + ": " + reply + "\n";
+
+        // Check and adjust the conversation context length
+        TrimConversationContext();
+
+        // Enqueue sentences for speech synthesis
+        Regex regex = new Regex(@"(.*?[.!?])\s*");
+        MatchCollection matches = regex.Matches(reply);
+        foreach (Match match in matches)
+        {
+            sentenceQueue.Enqueue(match.Groups[1].Value.Trim());
+        }
+
+        // Start processing the sentence queue for speech synthesis
+        StartCoroutine(ProcessSentenceQueue());
+    }
+}
+```
+
+This method sends the user message along with the conversation context to the OpenAI API and handles the chatbot's response. It updates the conversation context and enqueues sentences for speech synthesis to simulate a more natural conversation flow.
+
+### SpeechToText.cs
+
+This script, named `SpeechToText`, is used in Unity to perform speech recognition using Microsoft's Cognitive Services Speech API, and it also interacts with an `OpenAIChat` script to integrate with a chatbot.
+
+The most important code snippet is the `ButtonClick` method, where the speech recognition process is initiated:
+
+```csharp
+public async void ButtonClick()
+{
+    // Creates an instance of a speech config with specified subscription key and service region.
+    var config = SpeechConfig.FromSubscription(SubscriptionKey, Region);
+
+    using (var recognizer = new SpeechRecognizer(config))
+    {
+        lock (threadLocker)
+        {
+            waitingForReco = true;
+        }
+
+        // Starts speech recognition, and returns after a single utterance is recognized.
+        var result = await recognizer.RecognizeOnceAsync().ConfigureAwait(false);
+
+        // Checks result.
+        string newMessage = string.Empty;
+        if (result.Reason == ResultReason.RecognizedSpeech)
+        {
+            newMessage = result.Text;
+        }
+        else if (result.Reason == ResultReason.NoMatch)
+        {
+            newMessage = "NOMATCH: Speech could not be recognized.";
+        }
+        else if (result.Reason == ResultReason.Canceled)
+        {
+            var cancellation = CancellationDetails.FromResult(result);
+            newMessage = $"CANCELED: Reason={cancellation.Reason} ErrorDetails={cancellation.ErrorDetails}";
+        }
+
+        lock (threadLocker)
+        {
+            message = newMessage;
+            waitingForReco = false;
+            MainThreadDispatcher.RunOnMainThread(() => {
+                if (outputText != null)
+                {
+                    outputText.text = message;
+                }
+                openAIChat.OnRecieveSpeech(message);
+            });
+
+        }
+    }
+}
+```
+
+This method initializes a speech recognizer, starts speech recognition, and handles the recognition result. If recognized, the recognized text is processed and passed to the `OpenAIChat` script for further interaction.
+
+### TextToSpeech.cs
+
+This script, named `TextToSpeech`, handles text-to-speech synthesis in Unity using Microsoft's Cognitive Services Speech API, and it integrates with UI elements and an avatar animation.
+
+The most important code snippet is the `synthesizeSpeech` method, which performs text-to-speech synthesis and plays the generated audio:
+
+```csharp
+public void synthesizeSpeech(string speechMessage)
+{
+    // ...
+
+    using (var result = synthesizer.StartSpeakingTextAsync(speechMessage).Result)
+    {
+        // ...
+        
+        audioSource.clip = audioClip;
+        audioSource.PlayWithEvent();
+    }
+
+    lock (threadLocker)
+    {
+        // ...
+    }
+}
+```
+
+This method uses the `SpeechSynthesizer` to synthesize speech from the provided message. It creates an audio clip from the synthesized audio data and plays it through the `audioSource`. The method also handles playback control and synchronization with the main Unity thread.
 
 
 ## Contributing
