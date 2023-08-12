@@ -269,7 +269,7 @@ async Task GetRequest(string uri, string network, string tokenId)
 
 This method fetches metadata from a given URI, processes the retrieved JSON data to create an `NftData` object, and adds it to the `nftDataList` collection for later use.
 
-## AI Integration
+## AI Integration Code Highlights
 
 AI integration in this project involved the use of the OpenAI API for natural language processing, as well as the Microsoft Cognitive Services Speech SDK for text-to-speech synthesis; you can explore further details through the links below:
 
