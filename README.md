@@ -52,8 +52,7 @@ This is for gas-less transactions when transferring assets. Users dont have to p
 
 ## Crosschain Deployment
 
-To deploy a smart contract on a Testnet BSC with the ability to transfer NFTs to other chains see our [ZetaChain Crosschain NFT game SDK](https://github.com/andreykobal/zetachain-crosschain-nft-game-sdk)
-
+To deploy a smart contract on a BNB Smart Chain Testnet with the ability to transfer NFTs to other chains see our [ZetaChain Crosschain NFT game SDK](https://github.com/andreykobal/zetachain-crosschain-nft-game-sdk)
 
 ### Deployments
 
