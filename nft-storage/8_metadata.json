@@ -1,0 +1,29 @@
+{
+  "description": "Lucina, a human medic from ARTIMUS, tirelessly heals the wounded and researches ways to counteract the Mekanoids' corrupting influence.",
+  "external_url": "https://ailand.app/",
+  "image": "https://ipfs.io/ipfs/bafybeieqv6ln3lvdzeiw5txqksxkbvro6uozdpjwqu7zinf3di2ylrd2y4",
+  "name": "Lucina Starwhisper",
+  "animation_url": "https://ipfs.io/ipfs/bafybeihts6g4y7frbns2shzixjhapz4cclqutlz4qxohtti7n6pccsetzi",
+  "attributes": [
+    {
+      "trait_type": "Voice",
+      "value": "Female"
+    },
+    {
+      "trait_type": "Age",
+      "value": "29"
+    },
+    {
+      "trait_type": "Profession",
+      "value": "Medic and Researcher"
+    },
+    {
+      "trait_type": "Mood",
+      "value": "Compassionate and Intelligent"
+    },
+    {
+      "trait_type": "Race",
+      "value": "Human"
+    }
+  ]
+}

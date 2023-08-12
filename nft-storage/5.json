@@ -1,0 +1,12 @@
+{
+    "tokenId": 5,
+    "name": "Ryker Steelclaw",
+    "description": "Ryker, a Reptiloid warrior, once served Queen Tryst but betrayed her after witnessing the horrors of the mega-factories. He now fights alongside the resistance.",
+    "attributes": [
+        {"trait_type": "Voice", "value": "Male"},
+        {"trait_type": "Age", "value": "35"},
+        {"trait_type": "Profession", "value": "Warrior and Defector"},
+        {"trait_type": "Mood", "value": "Repentant and Fierce"},
+        {"trait_type": "Race", "value": "Reptiloid"}
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "tokenId": 14,
+    "name": "Kairos Firebrand",
+    "description": "Kairos is a human pyromancer. With his unique affinity to fire, he crafts weapons for the resistance and plays a crucial role in battles.",
+    "attributes": [
+        {"trait_type": "Voice", "value": "Male"},
+        {"trait_type": "Age", "value": "40"},
+        {"trait_type": "Profession", "value": "Pyromancer"},
+        {"trait_type": "Mood", "value": "Passionate and Fiery"},
+        {"trait_type": "Race", "value": "Human"}
+    ]
+}

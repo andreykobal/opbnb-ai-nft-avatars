@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ProjectConfigData
   m_EditorClassIdentifier: 
   projectID: fd2ec990-6caf-4786-98d2-95e67f2968cf
-  chainID: 1351057110
-  chain: Skale
+  chainID: 5611
+  chain: opBNB
   network: Testnet
-  rpc: https://staging-v3.skalenodes.com/v1/staging-fast-active-bellatrix
+  rpc: https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3

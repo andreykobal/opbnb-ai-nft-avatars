@@ -1,0 +1,12 @@
+{
+    "tokenId": 8,
+    "name": "Lucina Starwhisper",
+    "description": "Lucina, a human medic from ARTIMUS, tirelessly heals the wounded and researches ways to counteract the Mekanoids' corrupting influence.",
+    "attributes": [
+        {"trait_type": "Voice", "value": "Female"},
+        {"trait_type": "Age", "value": "29"},
+        {"trait_type": "Profession", "value": "Medic and Researcher"},
+        {"trait_type": "Mood", "value": "Compassionate and Intelligent"},
+        {"trait_type": "Race", "value": "Human"}
+    ]
+}

@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 public class AutonomousAIChat : MonoBehaviour
 {
     private const string apiEndpoint = "https://api.openai.com/v1/chat/completions";
-    private const string apiKey = "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"; // Make sure to insert your own API key here
+    private const string apiKey = ""; // Make sure to insert your own API key here
     private const string model = "gpt-3.5-turbo";
     private const int maxContextLength = 4096; 
 

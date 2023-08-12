@@ -1,0 +1,29 @@
+{
+  "description": "Silas is a Reptiloid historian who secretly archives the true history of AILAND. From GARATON, he seeks the truth behind the Elite's power and aids the resistance.",
+  "external_url": "https://ailand.app/",
+  "image": "https://ipfs.io/ipfs/bafybeigp6z745dmqeogkexo6br5yhr2okdzom3txoq57pb3sy4czqf4k7q",
+  "name": "Silas Coldweaver",
+  "animation_url": "https://ipfs.io/ipfs/bafybeiedo37n33nei4c5eoo4rp4lpyvubcpqgfe4jzchhu5x43ncipmlae",
+  "attributes": [
+    {
+      "trait_type": "Voice",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Age",
+      "value": "40"
+    },
+    {
+      "trait_type": "Profession",
+      "value": "Historian and Spy"
+    },
+    {
+      "trait_type": "Mood",
+      "value": "Cautious and Curious"
+    },
+    {
+      "trait_type": "Race",
+      "value": "Reptiloid"
+    }
+  ]
+}

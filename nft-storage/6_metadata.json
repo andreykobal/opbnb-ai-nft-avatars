@@ -1,0 +1,29 @@
+{
+  "description": "Nera is a talented Reptiloid musician. Her melodies inspire hope among the citizens of ARTIMUS and invigorate the resistance fighters.",
+  "external_url": "https://ailand.app/",
+  "image": "https://ipfs.io/ipfs/bafybeih62hcjylkawzhccapcxiolag4t5p53v33admo2j6xowrpm4s3ey4",
+  "name": "Nera Silversong",
+  "animation_url": "https://ipfs.io/ipfs/bafybeiglp6vo7slz2bipdnegzkvp64lp437l23lff6362ptw4xrf2ayqfu",
+  "attributes": [
+    {
+      "trait_type": "Voice",
+      "value": "Female"
+    },
+    {
+      "trait_type": "Age",
+      "value": "27"
+    },
+    {
+      "trait_type": "Profession",
+      "value": "Musician"
+    },
+    {
+      "trait_type": "Mood",
+      "value": "Passionate and Inspiring"
+    },
+    {
+      "trait_type": "Race",
+      "value": "Reptiloid"
+    }
+  ]
+}

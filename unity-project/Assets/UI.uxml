@@ -7,7 +7,7 @@
                 <ui:Label text="0x000...0000" display-tooltip-when-elided="true" name="Wallet" style="font-size: 18px; -unity-font-definition: resource(&apos;Roboto-Bold SDF&apos;);" />
                 <ui:VisualElement style="width: 30px; height: 30px; background-image: resource(&apos;coin&apos;); margin-left: 10px; margin-right: 10px;" />
                 <ui:Label text="00" display-tooltip-when-elided="true" name="Balance" style="font-size: 18px; margin-right: 5px; -unity-font-definition: resource(&apos;Roboto-Bold SDF&apos;);" />
-                <ui:Label text="$sFUEL" display-tooltip-when-elided="true" style="font-size: 18px; -unity-font-definition: resource(&apos;Roboto-Bold SDF&apos;);" />
+                <ui:Label text="$tBNB" display-tooltip-when-elided="true" style="font-size: 18px; -unity-font-definition: resource(&apos;Roboto-Bold SDF&apos;);" />
                 <ui:VisualElement style="width: 30px; height: 30px; background-image: resource(&apos;diamond&apos;); margin-left: 10px; margin-right: 10px;" />
                 <ui:Label text="00" display-tooltip-when-elided="true" name="DiamondsTotal" style="font-size: 18px; margin-right: 5px; -unity-font-definition: resource(&apos;Roboto-Bold SDF&apos;);" />
             </ui:VisualElement>

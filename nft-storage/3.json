@@ -1,0 +1,12 @@
+{
+    "tokenId": 3,
+    "name": "Silas Coldweaver",
+    "description": "Silas is a Reptiloid historian who secretly archives the true history of AILAND. From GARATON, he seeks the truth behind the Elite's power and aids the resistance.",
+    "attributes": [
+        {"trait_type": "Voice", "value": "Male"},
+        {"trait_type": "Age", "value": "40"},
+        {"trait_type": "Profession", "value": "Historian and Spy"},
+        {"trait_type": "Mood", "value": "Cautious and Curious"},
+        {"trait_type": "Race", "value": "Reptiloid"}
+    ]
+}

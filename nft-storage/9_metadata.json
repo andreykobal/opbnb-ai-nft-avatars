@@ -1,0 +1,29 @@
+{
+  "description": "Zyron, a Reptiloid engineer, designs tools and weaponry to enhance the resistance's chances against the overwhelming Mekanoid forces.",
+  "external_url": "https://ailand.app/",
+  "image": "https://ipfs.io/ipfs/bafybeih7t2coa3azli27rn53xgv6nw7gcqnrbo4fyawziokprzwkv5yjrq",
+  "name": "Zyron Scaleblade",
+  "animation_url": "https://ipfs.io/ipfs/bafybeie5t2mt65zypik3sdiprctwfe2tm6zoyotfi3quxgq6a2cydnrauu",
+  "attributes": [
+    {
+      "trait_type": "Voice",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Age",
+      "value": "33"
+    },
+    {
+      "trait_type": "Profession",
+      "value": "Engineer"
+    },
+    {
+      "trait_type": "Mood",
+      "value": "Innovative and Practical"
+    },
+    {
+      "trait_type": "Race",
+      "value": "Reptiloid"
+    }
+  ]
+}

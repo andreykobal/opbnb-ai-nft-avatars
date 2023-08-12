@@ -1,0 +1,12 @@
+{
+    "tokenId": 17,
+    "name": "Lyric Skydancer",
+    "description": "Lyric, a human aerialist, moves gracefully in the sky, signaling messages or carrying critical payloads over Mekanoid-occupied territories.",
+    "attributes": [
+        {"trait_type": "Voice", "value": "Female"},
+        {"trait_type": "Age", "value": "25"},
+        {"trait_type": "Profession", "value": "Aerialist and Messenger"},
+        {"trait_type": "Mood", "value": "Graceful and Daring"},
+        {"trait_type": "Race", "value": "Human"}
+    ]
+}

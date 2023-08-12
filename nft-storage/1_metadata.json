@@ -1,0 +1,29 @@
+{
+  "description": "Draven is a skilled inventor and engineer hailing from ARTIMUS. He lost his family to a Mekanoid attack, which fueled his determination to develop advanced weaponry and defensive systems to aid in the resistance. He is a charismatic leader and a source of inspiration for the people of AILAND.",
+  "external_url": "https://ailand.app/",
+  "image": "https://ipfs.io/ipfs/bafybeiaqrmbnbdifx3a3bicykwvaqynojex7m4jkgjkd354nqhc25bf2ay",
+  "name": "Draven Emberforge",
+  "animation_url": "https://ipfs.io/ipfs/bafybeiecgz6ajkpkqerak7saayscch2ckg56dyt3645sgltgnwrayq7pnu",
+  "attributes": [
+    {
+      "trait_type": "Voice",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Age",
+      "value": "34"
+    },
+    {
+      "trait_type": "Profession",
+      "value": "Inventor and Leader of the Resistance"
+    },
+    {
+      "trait_type": "Mood",
+      "value": "Determined and Focused"
+    },
+    {
+      "trait_type": "Race",
+      "value": "Human"
+    }
+  ]
+}

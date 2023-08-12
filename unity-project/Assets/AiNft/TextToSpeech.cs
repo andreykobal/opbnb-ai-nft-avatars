@@ -21,7 +21,7 @@ public class TextToSpeech : MonoBehaviour
     private Label outputText;
 
     // Replace with your own subscription key and service region (e.g., "westus").
-    private const string SubscriptionKey = "c7d785b3bf134446adf40fc5d036ce32";
+    private const string SubscriptionKey = "";
     private const string Region = "eastus";
 
     private const int SampleRate = 24000;

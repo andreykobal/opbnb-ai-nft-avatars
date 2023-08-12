@@ -1,0 +1,12 @@
+{
+    "tokenId": 12,
+    "name": "Althea Moonshadow",
+    "description": "Althea, a Reptiloid priestess, possesses ancient knowledge. She provides spiritual guidance to ARTIMUS's residents and performs rituals to protect them.",
+    "attributes": [
+        {"trait_type": "Voice", "value": "Female"},
+        {"trait_type": "Age", "value": "50"},
+        {"trait_type": "Profession", "value": "Priestess"},
+        {"trait_type": "Mood", "value": "Wise and Serene"},
+        {"trait_type": "Race", "value": "Reptiloid"}
+    ]
+}

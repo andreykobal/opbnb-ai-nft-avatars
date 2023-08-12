@@ -27,7 +27,7 @@ public class SpeechToText : MonoBehaviour
 
     private bool micPermissionGranted = false;
     
-    private const string SubscriptionKey = "c7d785b3bf134446adf40fc5d036ce32";
+    private const string SubscriptionKey = "";
     private const string Region = "eastus";
     
     public OpenAIChat openAIChat;

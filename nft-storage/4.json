@@ -1,0 +1,12 @@
+{
+    "tokenId": 4,
+    "name": "Liora Flamecrest",
+    "description": "Liora, a former member of the Elite, now opposes the corrupt corporations, using her vast wealth and resources to secretly aid the people of ARTIMUS.",
+    "attributes": [
+        {"trait_type": "Voice", "value": "Female"},
+        {"trait_type": "Age", "value": "32"},
+        {"trait_type": "Profession", "value": "Philanthropist and Former Elite"},
+        {"trait_type": "Mood", "value": "Regretful and Determined"},
+        {"trait_type": "Race", "value": "Human"}
+    ]
+}

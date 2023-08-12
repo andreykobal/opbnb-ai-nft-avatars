@@ -1,0 +1,12 @@
+{
+    "tokenId": 7,
+    "name": "Theta-X9",
+    "description": "Theta-X9, an AI-powered robot, once a tool for Queen Tryst, gained self-awareness and now aids the resistance by hacking into Mekanoid systems.",
+    "attributes": [
+        {"trait_type": "Voice", "value": "Robotic"},
+        {"trait_type": "Age", "value": "NA"},
+        {"trait_type": "Profession", "value": "Hacker"},
+        {"trait_type": "Mood", "value": "Analytical and Driven"},
+        {"trait_type": "Race", "value": "Robot"}
+    ]
+}

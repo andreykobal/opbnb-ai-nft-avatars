@@ -11,7 +11,7 @@ using UnityEngine.UIElements;
 public class OpenAIChat : MonoBehaviour
 {
     private const string apiEndpoint = "https://api.openai.com/v1/chat/completions";
-    private const string apiKey = "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";
+    private const string apiKey = "";
     private const string model = "gpt-3.5-turbo";
     private const int maxContextLength = 4096; // Maximum context length allowed by GPT
 

@@ -1,0 +1,29 @@
+{
+  "description": "Sigma-Z7 is a robot designed to assist in the medical field. It has saved countless lives in ARTIMUS, from minor injuries to severe traumas.",
+  "external_url": "https://ailand.app/",
+  "image": "https://ipfs.io/ipfs/bafybeifvnlg67yff6nznfz36vdcg7o46h5e7dky3sqeswdaud72uzvuqvu",
+  "name": "Sigma-Z7",
+  "animation_url": "https://ipfs.io/ipfs/bafybeifrpjiozrilrzktyukhlsnih3ogblgciubfzyftj7iavjs5cm74am",
+  "attributes": [
+    {
+      "trait_type": "Voice",
+      "value": "Robotic"
+    },
+    {
+      "trait_type": "Age",
+      "value": "NA"
+    },
+    {
+      "trait_type": "Profession",
+      "value": "Medical Assistant"
+    },
+    {
+      "trait_type": "Mood",
+      "value": "Precise and Caring"
+    },
+    {
+      "trait_type": "Race",
+      "value": "Robot"
+    }
+  ]
+}

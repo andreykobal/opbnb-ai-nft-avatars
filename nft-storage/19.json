@@ -1,0 +1,12 @@
+{
+    "tokenId": 19,
+    "name": "Zeta-D5",
+    "description": "Zeta-D5 serves as a liaison between robots and humans. Its programming emphasizes diplomacy, ensuring both sides collaborate efficiently.",
+    "attributes": [
+        {"trait_type": "Voice", "value": "Robotic"},
+        {"trait_type": "Age", "value": "NA"},
+        {"trait_type": "Profession", "value": "Diplomat"},
+        {"trait_type": "Mood", "value": "Diplomatic and Patient"},
+        {"trait_type": "Race", "value": "Robot"}
+    ]
+}
