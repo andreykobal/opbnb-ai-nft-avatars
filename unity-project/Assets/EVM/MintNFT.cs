@@ -19,7 +19,7 @@ public class MintNFT : MonoBehaviour
     async public void mintItem(int avatarIndex)
     {
         string chainId = "5611";
-        var tokenURI = "https://bafkreiczapdwomdlotjqt4yaojyizlgarn4kq57smi3ptkwn5lug5yz7yu.ipfs.nftstorage.link/";
+        var tokenURI = "https://gnfd-testnet-sp1.bnbchain.org/view/ailand-testnet/metadata.json";
 
         string contractAbi = ContractAbi.SingleChainAbi;
         string contractAddress = contractAddresses[avatarIndex];

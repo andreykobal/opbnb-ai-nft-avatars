@@ -26,7 +26,7 @@ public class MintDiamonds : MonoBehaviour
         string method = "batchMint";
         string gasLimit = "";
         string gasPrice = "";
-        string[] uri = { "https://bafkreiczapdwomdlotjqt4yaojyizlgarn4kq57smi3ptkwn5lug5yz7yu.ipfs.nftstorage.link/" };
+        string[] uri = { "https://gnfd-testnet-sp1.bnbchain.org/view/ailand-testnet/metadata.json" };
         var contract = new Contract(abi, contractAddress);
         var calldata = contract.Calldata(method, new object[]
         {

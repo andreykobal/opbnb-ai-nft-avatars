@@ -6,7 +6,7 @@ async function main() {
 
     const NUM_ITEMS = 1;
     const tokenURIs = [
-        "https://bafkreiczapdwomdlotjqt4yaojyizlgarn4kq57smi3ptkwn5lug5yz7yu.ipfs.nftstorage.link/"
+        "https://gnfd-testnet-sp1.bnbchain.org/view/ailand-testnet/metadata.json"
     ];
 
     for (let i = 0; i < NUM_ITEMS; i++) {
